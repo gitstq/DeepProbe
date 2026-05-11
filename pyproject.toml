@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "deepprobe"
+version = "1.0.0"
+description = "🔬 DeepProbe - Lightweight Local AI Deep Research Engine | 轻量级本地AI深度研究引擎"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "gitstq", email = "gitstq@users.noreply.github.com"},
+]
+keywords = [
+    "research", "ai", "deep-research", "search-engine", "knowledge-graph",
+    "cli", "tui", "privacy", "local-first", "multi-source",
+    "研究", "深度研究", "搜索引擎", "知识图谱", "隐私优先",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[project.scripts]
+deepprobe = "deepprobe.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/DeepProbe"
+Repository = "https://github.com/gitstq/DeepProbe"
+Issues = "https://github.com/gitstq/DeepProbe/issues"
+Changelog = "https://github.com/gitstq/DeepProbe/releases"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+deepprobe = ["py.typed"]
